@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@400;700&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #d8d3c5;
+  text-shadow: 0px 0px 1px #afaea3;
+  line-height: 1.2;
+  font-family: "Arima Madurai", cursive;
+}
+
+#hero {
+  width: auto;
+  height: 50vh;
+  overflow: hidden;
+  background-image: url("images/bg-small-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: 60s infinite change;
+  animation-fill-mode: forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@keyframes change {
+  0% {
+    background-image: url("images/bg-small-1.jpg");
+  }
+  40% {
+    background-image: url("images/bg-small-2.jpg");
+  }
+  60% {
+    background-image: url("images/bg-small-3.jpg");
+  }
+
+  100% {
+    background-image: url("images/bg-small-1.jpg");
+  }
+}
+
+.title {
+  background-color: #b12b1e;
+  opacity: 90%;
+  font-size: 40px;
+  padding: 8px 15px;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.description {
+  background-color: #103a57;
+  opacity: 90%;
+  padding: 8px 15px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.GPS-coordinates {
+  background-color: #afaea3;
+  opacity: 80%;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 10px;
+}
+
+.GPS-coordinates img {
+  padding-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.facts {
+  width: 25vw;
+  height: auto;
+  padding: 5px 10px;
+  margin: 0px;
+  background-color: #88a6b8;
+  background-size: cover;
+  color: #103a57;
+}
+
+.facts h1 {
+  font-weight: bold;
+}
+
+li {
+  line-height: 1.2;
+  padding: 10px 0px;
+  text-shadow: 0px 0px 0.5px #103a57;
+}
+
+.wrapper {
+  display: flex;
+  width: auto;
+  height: fit-content;
+}
+
+.wrapper1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.action-header {
+  background-color: #d8d3c5;
+  background-size: cover;
+  width: 75vw;
+  display: flex;
+  justify-content: center;
+}
+
+.action-header h1 {
+  color: #b12b1e;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+#action {
+  width: 75vw;
+  height: 500px;
+  background-color: #d8d3c5;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 20px;
+  text-align: center;
+}
+
+#action img {
+  width: 200px;
+  height: 300px;
+  margin: 25px 25px 0px 25px;
+  border-radius: 15px;
+}
+
+.act1,
+.act2,
+.act3,
+.front,
+.back {
+  width: 250px;
+  height: 400px;
+  border-radius: 15px;
+  background-color: #103a57;
+}
+
+.act1,
+.act2,
+.act3 {
+  width: 250px;
+  height: 400px;
+  border-radius: 15px;
+  background-color: #103a57;
+  transition: 1s;
+  transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+.back p {
+  padding: 10px 12px 0px 12px;
+}
+
+.back {
+  z-index: 1;
+  transform: rotateY(180deg);
+}
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+.act1:hover {
+  transform: rotateY(180deg);
+}
+
+.act2:hover {
+  transform: rotateY(180deg);
+}
+
+.act3:hover {
+  transform: rotateY(180deg);
+}
+
+.guide h3 {
+  font-size: 24px;
+}
+
+.guide {
+  width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background: #103a57;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px #88a6b8;
+}
+
+.guide p {
+  padding: 0 20px;
+}
+
+.avatar {
+  width: 120px;
+  height: 150px;
+  border: 2px solid #88a6b8;
+  border-radius: 20px;
+}
